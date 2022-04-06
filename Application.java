@@ -20,11 +20,12 @@ public class CallingMethodsInSameClass
 		printOne();
 		printOne();
 	}
-	#new changes for feature 301 by Akash
-	public static int factorial(int n)
-	{	int result = 1;
-		for(int i = 2; i <= n; i++)
-			result *= i;
-		return result;
+	#new changes for feature 302 by chaitanya
+	public static void falseSwap(int x, int y)
+	{	System.out.println("in method falseSwap. x: " + x + " y: " + y);
+		int temp = x;
+		x = y;
+		y = temp;
+		System.out.println("in method falseSwap. x: " + x + " y: " + y);
 	}
 }
